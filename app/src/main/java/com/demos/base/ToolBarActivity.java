@@ -1,4 +1,4 @@
-package com.myapplication.base;
+package com.demos.base;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -6,8 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.myapplication.R;
-import com.myapplication.tools.Tool;
+import com.demos.R;
+import com.demos.tools.Tool;
 
 /**
  * Created by Mr_Wrong on 16/2/2.

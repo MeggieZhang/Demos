@@ -1,4 +1,4 @@
-package com.myapplication.aidl;
+package com.demos.aidl;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -15,7 +15,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.myapplication.R;
+import com.demos.R;
 
 import java.util.List;
 

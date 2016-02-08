@@ -1,7 +1,7 @@
-package com.myapplication.aidl;
+package com.demos.aidl;
 
-import com.myapplication.aidl.Book;
-import com.myapplication.aidl.IOnNewBookArrivedListener;
+import com.demos.aidl.Book;
+import com.demos.aidl.IOnNewBookArrivedListener;
 
 interface IBookManager {
      List<Book> getBookList();

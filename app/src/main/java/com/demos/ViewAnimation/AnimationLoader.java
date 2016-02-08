@@ -1,4 +1,4 @@
-package com.myapplication.ViewAnimation;
+package com.demos.ViewAnimation;
 
 import android.content.Context;
 import android.view.animation.AlphaAnimation;

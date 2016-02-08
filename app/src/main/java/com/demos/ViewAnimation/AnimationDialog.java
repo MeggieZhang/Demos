@@ -1,4 +1,4 @@
-package com.myapplication.ViewAnimation;
+package com.demos.ViewAnimation;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.myapplication.R;
+import com.demos.R;
 
 /**
  * Created by Mr_Wrong on 16/2/2.

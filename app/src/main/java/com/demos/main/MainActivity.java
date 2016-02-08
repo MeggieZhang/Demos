@@ -1,4 +1,4 @@
-package com.myapplication.main;
+package com.demos.main;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,9 +6,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.myapplication.AllActivitys;
-import com.myapplication.R;
-import com.myapplication.base.ToolBarActivity;
+import com.demos.AllActivitys;
+import com.demos.R;
+import com.demos.base.ToolBarActivity;
 
 public class MainActivity extends ToolBarActivity {
     RecyclerView mRecyclerView;

@@ -1,10 +1,10 @@
-package com.myapplication;
+package com.demos;
 
 import android.app.Activity;
 
-import com.myapplication.ViewAnimation.CustomDialogActivity;
-import com.myapplication.aidl.AidlActivity;
-import com.myapplication.aidl.BookManagerActivity;
+import com.demos.ViewAnimation.CustomDialogActivity;
+import com.demos.aidl.AidlActivity;
+import com.demos.aidl.BookManagerActivity;
 
 /**
  * Created by Mr_Wrong on 16/2/2.

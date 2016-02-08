@@ -1,4 +1,4 @@
-package com.myapplication.ViewAnimation;
+package com.demos.ViewAnimation;
 
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.myapplication.R;
-import com.myapplication.base.ToolBarActivity;
+import com.demos.R;
+import com.demos.base.ToolBarActivity;
 
 /**
  * Created by Mr_Wrong on 16/2/2.

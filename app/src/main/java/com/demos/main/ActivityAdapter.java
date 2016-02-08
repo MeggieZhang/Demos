@@ -1,12 +1,12 @@
-package com.myapplication.main;
+package com.demos.main;
 
 import android.app.Activity;
 import android.content.Context;
 
-import com.myapplication.AllActivitys;
-import com.myapplication.R;
-import com.myapplication.base.BaseAdapter;
-import com.myapplication.base.MyViewHolder;
+import com.demos.AllActivitys;
+import com.demos.R;
+import com.demos.base.BaseAdapter;
+import com.demos.base.MyViewHolder;
 
 /**
  * Created by Mr_Wrong on 16/2/2.

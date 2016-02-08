@@ -1,4 +1,4 @@
-package com.myapplication.base;
+package com.demos.base;
 
 import android.annotation.TargetApi;
 import android.os.Build;

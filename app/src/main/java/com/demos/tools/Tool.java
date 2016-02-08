@@ -1,4 +1,4 @@
-package com.myapplication.tools;
+package com.demos.tools;
 
 import android.app.Activity;
 import android.content.Context;
@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.myapplication.R;
-import com.myapplication.base.ToolBarActivity;
+import com.demos.R;
+import com.demos.base.ToolBarActivity;
 import com.squareup.picasso.Picasso;
 
 /**
