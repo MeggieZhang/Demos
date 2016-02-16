@@ -31,11 +31,11 @@ public class BookManagerActivity extends Activity {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
-            case MESSAGE_NEW_BOOK_ARRIVED:
-                Log.d(TAG, "receive new book :" + msg.obj);
-                break;
-            default:
-                super.handleMessage(msg);
+                case MESSAGE_NEW_BOOK_ARRIVED:
+                    Log.d(TAG, "receive new book :" + msg.obj);
+                    break;
+                default:
+                    super.handleMessage(msg);
             }
         }
     };
@@ -49,12 +49,19 @@ public class BookManagerActivity extends Activity {
             mRemoteBookManager.asBinder().unlinkToDeath(mDeathRecipient, 0);
             mRemoteBookManager = null;
             // TODO:这里重新绑定远程Service
+            Intent intent = new Intent(BookManagerActivity.this, BookManagerService.class);
+            bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
         }
     };
 
     private ServiceConnection mConnection = new ServiceConnection() {
         public void onServiceConnected(ComponentName className, IBinder service) {
             IBookManager bookManager = IBookManager.Stub.asInterface(service);
+
+
+            IBookManageer manageer = BookManagerImpl.asInterface(service);
+//            manageer.getBookList()
+
             mRemoteBookManager = bookManager;
             try {
                 mRemoteBookManager.asBinder().linkToDeath(mDeathRecipient, 0);

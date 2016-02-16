@@ -27,6 +27,24 @@ public class BookManagerService extends Service {
 
     private RemoteCallbackList<IOnNewBookArrivedListener> mListenerList = new RemoteCallbackList<IOnNewBookArrivedListener>();
 
+
+
+    private Binder mBinder1 = new BookManagerImpl(){
+
+        @Override
+        public List<Book> getBookList() throws RemoteException {
+            return super.getBookList();
+        }
+
+        @Override
+        public void addBook(Book book) throws RemoteException {
+            super.addBook(book);
+        }
+
+    };
+
+
+
     private Binder mBinder = new IBookManager.Stub() {
 
         @Override
