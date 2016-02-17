@@ -1,7 +1,7 @@
 package com.demos.aidl;
 
 import com.demos.R;
-import com.demos.base.ToolBarActivity;
+import com.demos.main.base.ToolBarActivity;
 
 /**
  * Created by Mr_Wrong on 16/2/8.

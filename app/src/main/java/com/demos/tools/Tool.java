@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.demos.R;
-import com.demos.base.ToolBarActivity;
+import com.demos.main.base.ToolBarActivity;
 import com.squareup.picasso.Picasso;
 
 /**

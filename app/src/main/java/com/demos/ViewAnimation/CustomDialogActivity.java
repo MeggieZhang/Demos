@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.demos.R;
-import com.demos.base.ToolBarActivity;
+import com.demos.main.base.ToolBarActivity;
 
 /**
  * Created by Mr_Wrong on 16/2/2.

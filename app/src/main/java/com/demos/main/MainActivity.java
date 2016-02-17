@@ -8,7 +8,7 @@ import android.view.View;
 
 import com.demos.AllActivitys;
 import com.demos.R;
-import com.demos.base.ToolBarActivity;
+import com.demos.main.base.ToolBarActivity;
 
 public class MainActivity extends ToolBarActivity {
     RecyclerView mRecyclerView;

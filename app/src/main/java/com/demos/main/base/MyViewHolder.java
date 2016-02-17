@@ -1,4 +1,4 @@
-package com.demos.base;
+package com.demos.main.base;
 
 import android.util.SparseArray;
 import android.view.View;

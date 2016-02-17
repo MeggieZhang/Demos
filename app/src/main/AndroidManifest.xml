@@ -23,6 +23,9 @@
         <activity android:name="com.demos.aidl.BookManagerActivity"/>
 
         <service android:name="com.demos.aidl.BookManagerService"/>
+
+        <activity android:name=".viewdraghelper.SwipBackActivity"/>
+        <activity android:name=".viewdraghelper.SecondActivity"/>
     </application>
 
 </manifest>

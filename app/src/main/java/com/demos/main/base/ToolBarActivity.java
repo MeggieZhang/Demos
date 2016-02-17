@@ -1,4 +1,4 @@
-package com.demos.base;
+package com.demos.main.base;
 
 import android.graphics.Color;
 import android.os.Bundle;

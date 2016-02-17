@@ -5,6 +5,7 @@ import android.app.Activity;
 import com.demos.ViewAnimation.CustomDialogActivity;
 import com.demos.aidl.AidlActivity;
 import com.demos.aidl.BookManagerActivity;
+import com.demos.viewdraghelper.SwipBackActivity;
 
 /**
  * Created by Mr_Wrong on 16/2/2.
@@ -12,7 +13,9 @@ import com.demos.aidl.BookManagerActivity;
 public enum AllActivitys {
     TestActivity(CustomDialogActivity.class),
     AidlActivity(AidlActivity.class),
-    BookManagerActivity(BookManagerActivity.class);
+    BookManagerActivity(BookManagerActivity.class),
+    DragActivity(SwipBackActivity.class);
+
 
     private Class activityClazz;
 

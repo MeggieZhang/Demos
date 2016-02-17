@@ -5,8 +5,8 @@ import android.content.Context;
 
 import com.demos.AllActivitys;
 import com.demos.R;
-import com.demos.base.BaseAdapter;
-import com.demos.base.MyViewHolder;
+import com.demos.main.base.BaseAdapter;
+import com.demos.main.base.MyViewHolder;
 
 /**
  * Created by Mr_Wrong on 16/2/2.
