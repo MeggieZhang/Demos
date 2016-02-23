@@ -5,7 +5,10 @@ import android.app.Activity;
 import com.demos.ViewAnimation.CustomDialogActivity;
 import com.demos.aidl.AidlActivity;
 import com.demos.aidl.BookManagerActivity;
+import com.demos.asynchronous.AsyncTaskActivity;
 import com.demos.viewdraghelper.SwipBackActivity;
+import com.demos.window.WindowActivity;
+
 
 /**
  * Created by Mr_Wrong on 16/2/2.
@@ -14,7 +17,10 @@ public enum AllActivitys {
     TestActivity(CustomDialogActivity.class),
     AidlActivity(AidlActivity.class),
     BookManagerActivity(BookManagerActivity.class),
-    DragActivity(SwipBackActivity.class);
+    DragActivity(SwipBackActivity.class),
+    AsyncTaskActivity(AsyncTaskActivity.class),
+    WindowActivity(WindowActivity.class),
+    CheckBoxActivity(com.demos.checkbox.CheckBoxActivity.class);
 
 
     private Class activityClazz;
