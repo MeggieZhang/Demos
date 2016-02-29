@@ -3,7 +3,7 @@
     package="com.demos"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
     <application
         android:allowBackup="true"
@@ -31,6 +31,13 @@
         <activity android:name=".asynchronous.AsyncTaskActivity"/>
         <activity android:name=".window.WindowActivity"/>
         <activity android:name=".checkbox.CheckBoxActivity"/>
+        <activity android:name=".TwoBallsSeekbar.SeekBarActivity"/>
+        <activity android:name=".NestedScrolling.NestedScrollingActivity"/>
+        <activity android:name=".NestedScrolling.BehaviorActivity"/>
+        <activity android:name=".NestedScrolling.FabActivity"/>
+        <activity
+            android:name=".support_23_2.DayNightActivity"
+            android:theme="@style/MyDayNight"/>
 
         <service android:name=".window.WindowService"/>
     </application>

@@ -12,5 +12,4 @@ public class AidlActivity extends ToolBarActivity {
         return R.layout.aidl;
     }
 
-
 }

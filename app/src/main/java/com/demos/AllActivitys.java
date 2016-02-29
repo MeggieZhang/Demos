@@ -2,6 +2,7 @@ package com.demos;
 
 import android.app.Activity;
 
+import com.demos.TwoBallsSeekbar.SeekBarActivity;
 import com.demos.ViewAnimation.CustomDialogActivity;
 import com.demos.aidl.AidlActivity;
 import com.demos.aidl.BookManagerActivity;
@@ -20,7 +21,10 @@ public enum AllActivitys {
     DragActivity(SwipBackActivity.class),
     AsyncTaskActivity(AsyncTaskActivity.class),
     WindowActivity(WindowActivity.class),
-    CheckBoxActivity(com.demos.checkbox.CheckBoxActivity.class);
+    CheckBoxActivity(com.demos.checkbox.CheckBoxActivity.class),
+    SeekBarActivity(SeekBarActivity.class),
+    BehaviorActivity(com.demos.NestedScrolling.BehaviorActivity.class),
+    DayNightActivity(com.demos.support_23_2.DayNightActivity.class);
 
 
     private Class activityClazz;

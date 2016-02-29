@@ -1,8 +1,4 @@
-package com.demos.http
-
-import com.demos.main.base.ToolBarActivity;
-
-://blog.oceancx.com/2016/01/31/Android-CheckBox%E8%AF%A6%E8%A7%A3;
+package com.demos.checkbox;
 
 import android.os.Bundle;
 import android.widget.CheckBox;

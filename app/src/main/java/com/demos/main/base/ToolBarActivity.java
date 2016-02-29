@@ -9,6 +9,8 @@ import android.view.View;
 import com.demos.R;
 import com.demos.tools.Tool;
 
+import butterknife.ButterKnife;
+
 /**
  * Created by Mr_Wrong on 16/2/2.
  */
@@ -22,6 +24,7 @@ public abstract class ToolBarActivity extends AppCompatActivity {
         mTool = new Tool(this);
         super.onCreate(savedInstanceState);
         setContentView(getLayout());
+        ButterKnife.bind(this);
         mToolbar = (Toolbar) findViewById(R.id.inc_toolbar);
         mToolbar.setNavigationIcon(R.drawable.ic_back);
         mToolbar.setTitleTextColor(Color.WHITE);

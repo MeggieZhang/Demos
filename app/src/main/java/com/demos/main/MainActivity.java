@@ -32,6 +32,8 @@ public class MainActivity extends ToolBarActivity {
         for (int i = 0; i < AllActivitys.values().length; i++) {
             mAdapter.add(AllActivitys.values()[i].getActivity());
         }
+
+
     }
 
     @Override
