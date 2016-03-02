@@ -38,6 +38,9 @@
         <activity
             android:name=".support_23_2.DayNightActivity"
             android:theme="@style/MyDayNight"/>
+        <activity android:name=".uploadPic.UpLoadPicActivity"/>
+        <activity android:name=".headlist.PinnedSectionListActivity"/>
+        <activity android:name=".headlist.RefreshListActivity"/>
 
         <service android:name=".window.WindowService"/>
     </application>

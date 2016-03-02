@@ -37,7 +37,6 @@ public class FabActivity extends ToolBarActivity {
     @Bind(R.id.nestedscrollview)
     NestedScrollView nestedscrollview;
 
-
     MyBottomBehavior behavior;
 
     @OnClick(R.id.fab)

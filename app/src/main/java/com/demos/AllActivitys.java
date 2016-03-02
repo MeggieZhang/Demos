@@ -7,9 +7,10 @@ import com.demos.ViewAnimation.CustomDialogActivity;
 import com.demos.aidl.AidlActivity;
 import com.demos.aidl.BookManagerActivity;
 import com.demos.asynchronous.AsyncTaskActivity;
+import com.demos.uploadPic.UpLoadPicActivity;
 import com.demos.viewdraghelper.SwipBackActivity;
 import com.demos.window.WindowActivity;
-
+import com.demos.headlist.RefreshListActivity;
 
 /**
  * Created by Mr_Wrong on 16/2/2.
@@ -24,7 +25,10 @@ public enum AllActivitys {
     CheckBoxActivity(com.demos.checkbox.CheckBoxActivity.class),
     SeekBarActivity(SeekBarActivity.class),
     BehaviorActivity(com.demos.NestedScrolling.BehaviorActivity.class),
-    DayNightActivity(com.demos.support_23_2.DayNightActivity.class);
+    DayNightActivity(com.demos.support_23_2.DayNightActivity.class),
+    UpLoadPicActivity(UpLoadPicActivity.class),
+    PinnedSectionListActivity(com.demos.headlist.PinnedSectionListActivity.class),
+    RefreshListActivity(RefreshListActivity.class);
 
 
     private Class activityClazz;

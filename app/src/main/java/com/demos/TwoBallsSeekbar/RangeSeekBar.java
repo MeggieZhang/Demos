@@ -83,7 +83,6 @@ public class RangeSeekBar extends FrameLayout {
 
         @Override
         public void onViewPositionChanged(View changedView, int left, int top, int dx, int dy) {
-//            DebugLog.e("changedView :" + changedView.getLeft() + " left:" + left + " top:" + top + " dx:" + dx + " dy:" + dy);
             if (changedView == left_img) {
                 //left_img右滑撞到right_img
                 if (left + left_img.getMeasuredWidth() - dx == right_img.getLeft() && dx > 0) {

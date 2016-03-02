@@ -49,13 +49,13 @@ public class BackLayout extends FrameLayout {
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         mWidth = getMeasuredWidth();
         mHeight = getMeasuredHeight();
+        mSwipWidth = mBehind.getMeasuredWidth();
     }
 
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         mContent.layout(mSwipLeft, 0, mWidth + mSwipLeft, mHeight);
         mBehind.layout(0, 0, mSwipWidth, mHeight);
-        mSwipWidth = mBehind.getMeasuredWidth();
     }
 
     private void init() {
@@ -108,7 +108,7 @@ public class BackLayout extends FrameLayout {
                 mSwipLeft = left;
             }
             handleEvent(mSwipLeft);
-            invalidate();
+            requestLayout();
         }
     }
 

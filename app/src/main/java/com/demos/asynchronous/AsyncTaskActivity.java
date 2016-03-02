@@ -22,7 +22,7 @@ public class AsyncTaskActivity extends ToolBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         textView = mTool.find(R.id.tv_text);
-        new Task().execute(1);
+        AsyncTask task = new Task().execute(1);
     }
 
 
@@ -50,7 +50,7 @@ public class AsyncTaskActivity extends ToolBarActivity {
 
         @Override
         protected void onProgressUpdate(Integer... values) {
-            textView.setText(values[0]+"");
+            textView.setText(values[0] + "");
         }
 
         @Override
