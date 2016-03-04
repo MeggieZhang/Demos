@@ -2,15 +2,16 @@ package com.demos;
 
 import android.app.Activity;
 
-import com.demos.TwoBallsSeekbar.SeekBarActivity;
 import com.demos.CustomDialog.CustomDialogActivity;
+import com.demos.RequestQueue.QueueActivity;
+import com.demos.TwoBallsSeekbar.SeekBarActivity;
 import com.demos.aidl.AidlActivity;
 import com.demos.aidl.BookManagerActivity;
 import com.demos.asynchronous.AsyncTaskActivity;
+import com.demos.headlist.RefreshListActivity;
 import com.demos.uploadPic.UpLoadPicActivity;
 import com.demos.viewdraghelper.SwipBackActivity;
 import com.demos.window.WindowActivity;
-import com.demos.headlist.RefreshListActivity;
 
 /**
  * Created by Mr_Wrong on 16/2/2.
@@ -29,7 +30,8 @@ public enum AllActivitys {
     UpLoadPicActivity(UpLoadPicActivity.class),
     PinnedSectionListActivity(com.demos.headlist.PinnedSectionListActivity.class),
     RefreshListActivity(RefreshListActivity.class),
-    CustomDialogActivity(CustomDialogActivity.class);
+    CustomDialogActivity(CustomDialogActivity.class),
+    QueueActivity(QueueActivity.class);
 
 
     private Class activityClazz;

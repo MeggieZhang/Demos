@@ -41,6 +41,7 @@
         <activity android:name=".uploadPic.UpLoadPicActivity"/>
         <activity android:name=".headlist.PinnedSectionListActivity"/>
         <activity android:name=".headlist.RefreshListActivity"/>
+        <activity android:name=".RequestQueue.QueueActivity"/>
 
         <service android:name=".window.WindowService"/>
     </application>
