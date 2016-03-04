@@ -15,3 +15,9 @@
 [support_23_2的一些东西](https://github.com/70kg/Demos/tree/master/app/src/main/java/com/demos/TwoBallsSeekbar)
 
 [NestedScrolling,Behavior,CoordinatorLayout的一些东西](https://github.com/70kg/Demos/tree/master/app/src/main/java/com/demos/NestedScrolling)
+
+[自定义dialog](https://github.com/70kg/Demos/tree/master/app/src/main/java/com/demos/CustomDialog)
+
+[下拉的一个玩意](https://github.com/70kg/Demos/tree/master/app/src/main/java/com/demos/headlist)
+
+[上传图片](https://github.com/70kg/Demos/tree/master/app/src/main/java/com/demos/uploadPic)
