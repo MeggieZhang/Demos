@@ -21,3 +21,5 @@
 [下拉的一个玩意](https://github.com/70kg/Demos/tree/master/app/src/main/java/com/demos/headlist)
 
 [上传图片](https://github.com/70kg/Demos/tree/master/app/src/main/java/com/demos/uploadPic)
+
+[异步队列的玩意](https://github.com/70kg/Demos/tree/master/app/src/main/java/com/demos/RequestQueue)
