@@ -1,4 +1,4 @@
-package com.demos.ViewAnimation;
+package com.demos.CustomDialog;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -19,7 +19,11 @@ public class AnimationDialog extends AlertDialog implements View.OnClickListener
     private CharSequence mTitleText, mContentText, mPositiveText, mNegativeText;
 
     public AnimationDialog(Context context) {
-        super(context);
+        this(context, 0);
+    }
+
+    public AnimationDialog(Context context, int theme) {
+        super(context, R.style.color_dialog);
     }
 
     @Override

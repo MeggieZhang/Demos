@@ -6,17 +6,9 @@
 
     <include layout="@layout/inc_toolbar"/>
 
-
-    <ImageView
-        android:id="@+id/iv_view_animation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@drawable/ic_launcher"/>
-
     <Button
-        android:id="@+id/btn_dialog"
+        android:id="@+id/btn_custom_dialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="自定义的"/>
+        android:text="dialog"/>
 </LinearLayout>

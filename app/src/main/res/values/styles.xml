@@ -32,5 +32,11 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="title_text">@color/colorAccent</item>
+    </style>
+
+    <style name="dialogWindowAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/scale_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/scale_dialog_out</item>
     </style>
 </resources>

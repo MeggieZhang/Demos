@@ -3,7 +3,7 @@ package com.demos;
 import android.app.Activity;
 
 import com.demos.TwoBallsSeekbar.SeekBarActivity;
-import com.demos.ViewAnimation.CustomDialogActivity;
+import com.demos.CustomDialog.CustomDialogActivity;
 import com.demos.aidl.AidlActivity;
 import com.demos.aidl.BookManagerActivity;
 import com.demos.asynchronous.AsyncTaskActivity;
@@ -28,7 +28,8 @@ public enum AllActivitys {
     DayNightActivity(com.demos.support_23_2.DayNightActivity.class),
     UpLoadPicActivity(UpLoadPicActivity.class),
     PinnedSectionListActivity(com.demos.headlist.PinnedSectionListActivity.class),
-    RefreshListActivity(RefreshListActivity.class);
+    RefreshListActivity(RefreshListActivity.class),
+    CustomDialogActivity(CustomDialogActivity.class);
 
 
     private Class activityClazz;

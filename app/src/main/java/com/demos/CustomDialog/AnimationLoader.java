@@ -1,4 +1,4 @@
-package com.demos.ViewAnimation;
+package com.demos.CustomDialog;
 
 import android.content.Context;
 import android.view.animation.AlphaAnimation;

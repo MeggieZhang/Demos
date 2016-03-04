@@ -21,7 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.demos.ViewAnimation.CustomDialogActivity"/>
+        <activity android:name="com.demos.CustomDialog.CustomDialogActivity"/>
         <activity android:name="com.demos.aidl.BookManagerActivity"/>
 
         <service android:name="com.demos.aidl.BookManagerService"/>

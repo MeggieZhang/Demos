@@ -17,6 +17,7 @@ public class MainActivity extends ToolBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         mToolbar.setNavigationIcon(null);
         mRecyclerView = (RecyclerView) findViewById(R.id.recycleview);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));

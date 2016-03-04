@@ -1,14 +1,20 @@
-package com.demos.ViewAnimation;
+package com.demos.CustomDialog;
 
+import android.animation.ValueAnimator;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.Window;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.demos.R;
 import com.demos.main.base.ToolBarActivity;
+import com.socks.library.KLog;
+
+import butterknife.OnClick;
 
 /**
  * Created by Mr_Wrong on 16/2/2.
@@ -20,6 +26,12 @@ public class CustomDialogActivity extends ToolBarActivity {
     @Override
     public int getLayout() {
         return R.layout.test;
+    }
+
+    @OnClick(R.id.btn_dialog)
+    void _dialog() {
+        AnimationDialog dialog = new AnimationDialog(CustomDialogActivity.this);
+        dialog.show();
     }
 
     @Override
@@ -39,8 +51,28 @@ public class CustomDialogActivity extends ToolBarActivity {
                 button.setText("取消");
                 d.show();
 
-                AnimationDialog dialog = new AnimationDialog(CustomDialogActivity.this);
-//                dialog.show();
+                Window window = d.getWindow();
+                window.setWindowAnimations(R.style.dialogWindowAnim);
+
+            }
+        });
+
+
+        final AccelerateDecelerateInterpolator interpolator = new AccelerateDecelerateInterpolator();
+
+
+        KLog.e(interpolator.getInterpolation(0.25f));
+
+        ValueAnimator animator = ValueAnimator.ofFloat(0, 10);
+        animator.setInterpolator(interpolator);
+        animator.setDuration(2000);
+        animator.start();
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                float f = (float) animation.getAnimatedValue();
+                imageView.setScaleX(f);
+
             }
         });
 

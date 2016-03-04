@@ -6,7 +6,10 @@ import android.support.v4.widget.ViewDragHelper;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.LinearLayout;
+
+import com.socks.library.KLog;
 
 /**
  * Created by Mr_Wrong on 16/3/2.
@@ -45,6 +48,7 @@ public class RefreshList extends LinearLayout {
 //        KLog.e(mContentView.getTop());
     }
 
+    AccelerateDecelerateInterpolator interpolator = new AccelerateDecelerateInterpolator();
 
     private void init() {
         setOrientation(VERTICAL);
@@ -56,10 +60,13 @@ public class RefreshList extends LinearLayout {
 
             @Override
             public void onViewPositionChanged(View changedView, int left, int top, int dx, int dy) {
+
+                float f = top;
+                KLog.e((f*interpolator.getInterpolation(f / mHeadHeight)));
+//                mCurrentHeight = (int) (top*interpolator.getInterpolation(f / mHeadHeight));
                 mCurrentHeight = top;
                 requestLayout();
-                float t = top;
-                mHeadView.setPercent(t / mHeadHeight);
+                mHeadView.setPercent(f / mHeadHeight);
             }
 
             @Override

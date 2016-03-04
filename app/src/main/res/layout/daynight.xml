@@ -17,7 +17,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="按钮"/>
+            android:text="按钮"
+            android:textColor="?title_text"/>
 
         <Button
             android:id="@+id/btn_button2"
@@ -41,9 +42,10 @@
             android:text="文字"/>
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher"/>
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/layerlist"/>
     </LinearLayout>
 
     <android.support.v4.widget.NestedScrollView
