@@ -8,6 +8,7 @@ import com.demos.TwoBallsSeekbar.SeekBarActivity;
 import com.demos.aidl.AidlActivity;
 import com.demos.aidl.BookManagerActivity;
 import com.demos.asynchronous.AsyncTaskActivity;
+import com.demos.dragger.DraggerActivity;
 import com.demos.headlist.RefreshListActivity;
 import com.demos.uploadPic.UpLoadPicActivity;
 import com.demos.viewdraghelper.SwipBackActivity;
@@ -31,7 +32,9 @@ public enum AllActivitys {
     PinnedSectionListActivity(com.demos.headlist.PinnedSectionListActivity.class),
     RefreshListActivity(RefreshListActivity.class),
     CustomDialogActivity(CustomDialogActivity.class),
-    QueueActivity(QueueActivity.class);
+    QueueActivity(QueueActivity.class),
+    BesselActivity(com.demos.Bessel.BesselActivity.class),
+    DraggerActivity(DraggerActivity.class);
 
 
     private Class activityClazz;

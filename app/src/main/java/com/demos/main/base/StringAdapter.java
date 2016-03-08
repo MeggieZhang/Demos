@@ -20,4 +20,5 @@ public abstract class StringAdapter extends BaseAdapter<String> {
     protected int getLayout() {
         return android.R.layout.simple_list_item_1;
     }
+
 }

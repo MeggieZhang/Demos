@@ -14,7 +14,13 @@
 
     <Button
         android:id="@+id/btn_behavior2"
-        android:text="FabActivity"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="FabActivity"/>
+
+    <Button
+        android:id="@+id/btn_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击"/>
 </LinearLayout>

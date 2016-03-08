@@ -5,7 +5,11 @@ public class Alone {
     public static void main(String[] args) {
         String s = "Mr John Smith 13";
         char[] chars = s.toCharArray();
-        replaceBlank(chars, 13);
+//        replaceBlank(chars, 13);
+        int f = 10 << 1;
+        System.out.println(f + " ");
+
+        System.out.println(3 % 3+"");
     }
 
 

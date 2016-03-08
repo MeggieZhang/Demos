@@ -42,6 +42,8 @@
         <activity android:name=".headlist.PinnedSectionListActivity"/>
         <activity android:name=".headlist.RefreshListActivity"/>
         <activity android:name=".RequestQueue.QueueActivity"/>
+        <activity android:name=".Bessel.BesselActivity"/>
+        <activity android:name=".dragger.DraggerActivity"/>
 
         <service android:name=".window.WindowService"/>
     </application>
