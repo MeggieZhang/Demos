@@ -23,3 +23,11 @@
 [上传图片](https://github.com/70kg/Demos/tree/master/app/src/main/java/com/demos/uploadPic)
 
 [异步队列的玩意](https://github.com/70kg/Demos/tree/master/app/src/main/java/com/demos/RequestQueue)
+
+[贝塞尔曲线图表还有曲线动画的一些玩意](https://github.com/70kg/Demos/tree/master/app/src/main/java/com/demos/Bessel)
+
+[加载空的视图](https://github.com/70kg/Demos/blob/master/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdemos%2Fblanklayout%2FBlankLayout.java)
+
+[dragger2的最简单使用](https://github.com/70kg/Demos/tree/master/app/src/main/java/com/demos/dragger)
+
+
