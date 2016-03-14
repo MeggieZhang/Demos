@@ -9,6 +9,7 @@ import com.demos.aidl.AidlActivity;
 import com.demos.aidl.BookManagerActivity;
 import com.demos.asynchronous.AsyncTaskActivity;
 import com.demos.dragger.DraggerActivity;
+import com.demos.faceabstrct.FaceAbsActivity;
 import com.demos.headlist.RefreshListActivity;
 import com.demos.uploadPic.UpLoadPicActivity;
 import com.demos.viewdraghelper.SwipBackActivity;
@@ -34,7 +35,8 @@ public enum AllActivitys {
     CustomDialogActivity(CustomDialogActivity.class),
     QueueActivity(QueueActivity.class),
     BesselActivity(com.demos.Bessel.BesselActivity.class),
-    DraggerActivity(DraggerActivity.class);
+    DraggerActivity(DraggerActivity.class),
+    FaceAbsActivity(FaceAbsActivity.class);
 
 
     private Class activityClazz;

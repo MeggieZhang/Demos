@@ -9,7 +9,6 @@ public class Alone {
         int f = 10 << 1;
         System.out.println(f + " ");
 
-        System.out.println(3 % 3+"");
     }
 
 

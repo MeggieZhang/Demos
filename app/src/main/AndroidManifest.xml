@@ -44,6 +44,7 @@
         <activity android:name=".RequestQueue.QueueActivity"/>
         <activity android:name=".Bessel.BesselActivity"/>
         <activity android:name=".dragger.DraggerActivity"/>
+        <activity android:name=".faceabstrct.FaceAbsActivity"/>
 
         <service android:name=".window.WindowService"/>
     </application>
