@@ -45,8 +45,10 @@
         <activity android:name=".Bessel.BesselActivity"/>
         <activity android:name=".dragger.DraggerActivity"/>
         <activity android:name=".faceabstrct.FaceAbsActivity"/>
+        <activity android:name=".service.ServiceActivity"/>
 
         <service android:name=".window.WindowService"/>
+        <service android:name=".service.TestService"/>
     </application>
 
 </manifest>

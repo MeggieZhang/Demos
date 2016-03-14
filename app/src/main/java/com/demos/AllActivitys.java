@@ -11,6 +11,7 @@ import com.demos.asynchronous.AsyncTaskActivity;
 import com.demos.dragger.DraggerActivity;
 import com.demos.faceabstrct.FaceAbsActivity;
 import com.demos.headlist.RefreshListActivity;
+import com.demos.service.ServiceActivity;
 import com.demos.uploadPic.UpLoadPicActivity;
 import com.demos.viewdraghelper.SwipBackActivity;
 import com.demos.window.WindowActivity;
@@ -36,12 +37,13 @@ public enum AllActivitys {
     QueueActivity(QueueActivity.class),
     BesselActivity(com.demos.Bessel.BesselActivity.class),
     DraggerActivity(DraggerActivity.class),
-    FaceAbsActivity(FaceAbsActivity.class);
+    FaceAbsActivity(FaceAbsActivity.class),
+    ServiceActivity(ServiceActivity.class);
 
 
     private Class activityClazz;
 
-    private AllActivitys(Class clazz) {
+    AllActivitys(Class clazz) {
         activityClazz = clazz;
     }
 
