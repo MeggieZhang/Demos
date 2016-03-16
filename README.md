@@ -30,4 +30,13 @@
 
 [dragger2的最简单使用](https://github.com/70kg/Demos/tree/master/app/src/main/java/com/demos/dragger)
 
+[自己写了个简单的AsyncTask](https://github.com/70kg/Demos/blob/master/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdemos%2Fasynchronous%2FAsyncTaskFor70kg.java)
+
+[还有一种。。数据和view的绑定方式吧](https://github.com/70kg/Demos/tree/master/app/src/main/java/com/demos/faceabstrct)
+
+[简单了解了一下ListView的工作原理](https://github.com/70kg/Demos/blob/master/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdemos%2FmyList%2FMyList.java)
+
+[了解了一下ThreadLocal](https://github.com/70kg/Demos/blob/master/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdemos%2FthreadLocal%2FTestThreadLocal.java)
+
+
 
