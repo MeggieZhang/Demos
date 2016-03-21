@@ -10,13 +10,14 @@ import android.graphics.PathMeasure;
 import android.graphics.Point;
 import android.util.AttributeSet;
 import android.view.View;
-import android.view.animation.DecelerateInterpolator;
+import android.view.animation.BounceInterpolator;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Mr_Wrong on 16/3/4.
+ * 画图表的  还有曲线运动
  */
 public class TestBesselView extends View {
     public TestBesselView(Context context) {
@@ -83,12 +84,12 @@ public class TestBesselView extends View {
     PathMeasure mPathMeasure;
     float[] mCurrentPosition = new float[2];
 
-    public void startAnima(long duration) {
+    public void startAnimator(long duration) {
         onlyBall = true;
-        if (mPathMeasure == null) mPathMeasure = new PathMeasure(clicPath, true);
+        if (mPathMeasure == null) mPathMeasure = new PathMeasure(clicPath, false);
         final ValueAnimator valueAnimator = ValueAnimator.ofFloat(0, mPathMeasure.getLength());
         valueAnimator.setDuration(duration);
-        valueAnimator.setInterpolator(new DecelerateInterpolator());
+        valueAnimator.setInterpolator(new BounceInterpolator());
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
 
             @Override
@@ -96,13 +97,7 @@ public class TestBesselView extends View {
                 float value = (Float) animation.getAnimatedValue();
                 // 获取当前点坐标封装到mCurrentPosition
                 mPathMeasure.getPosTan(value, mCurrentPosition, null);
-                int i = (int) mCurrentPosition[0];
-                if (!(Math.abs(i - datas.get(datas.size() - 1).x) < 10)) {
-                    invalidate();
-                }else {
-                    valueAnimator.cancel();
-                }
-
+                invalidate();
 //                if (value == mPathMeasure.getLength())
 //                    animaFirst = true;
             }
@@ -133,9 +128,6 @@ public class TestBesselView extends View {
             canvas.drawCircle(controllB_X, controllB_Y, 5, controllPaintB);
         }
 
-//        clicPath.lineTo(datas.get(datas.size() - 1).x, height);
-//        clicPath.lineTo(datas.get(0).x, height);
-//        clicPath.lineTo(datas.get(0).x, datas.get(0).y);
         canvas.drawPath(clicPath, mPaint);
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setColor(Color.RED);

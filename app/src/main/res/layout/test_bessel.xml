@@ -12,6 +12,11 @@
         android:layout_height="wrap_content"
         android:text="开始"/>
 
+    <!--<com.demos.Bessel.RightView-->
+        <!--android:id="@+id/rightview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+
     <com.demos.Bessel.TestBesselView
         android:id="@+id/test_bessel"
         android:layout_width="match_parent"

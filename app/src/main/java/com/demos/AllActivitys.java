@@ -38,7 +38,8 @@ public enum AllActivitys {
     BesselActivity(com.demos.Bessel.BesselActivity.class),
     DraggerActivity(DraggerActivity.class),
     FaceAbsActivity(FaceAbsActivity.class),
-    ServiceActivity(ServiceActivity.class);
+    ServiceActivity(ServiceActivity.class),
+    DouBanMovieActivity(com.demos.douban.DouBanMovieActivity.class);
 
 
     private Class activityClazz;

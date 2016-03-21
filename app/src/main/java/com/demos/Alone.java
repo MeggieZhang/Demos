@@ -1,5 +1,7 @@
 package com.demos;
 
+import java.util.Map;
+
 public class Alone {
 
     public static void main(String[] args) {
@@ -9,6 +11,10 @@ public class Alone {
         int f = 10 << 1;
         System.out.println(f + " ");
 
+
+        for (Map.Entry entry : System.getenv().entrySet()) {
+            System.out.println(entry.getKey() + "--" + entry.getValue());
+        }
     }
 
 

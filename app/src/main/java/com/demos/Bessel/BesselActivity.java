@@ -15,7 +15,7 @@ public class BesselActivity extends ToolBarActivity {
 
     @OnClick(R.id.btn_bssel)
     void _click() {
-        testBessel.startAnima(10000);
+        testBessel.startAnimator(3000);
     }
 
     @Override
