@@ -38,5 +38,7 @@
 
 [了解了一下ThreadLocal](https://github.com/70kg/Demos/blob/master/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdemos%2FthreadLocal%2FTestThreadLocal.java)
 
+[retrofit+rxjava最佳实践](https://github.com/70kg/Demos/tree/master/app/src/main/java/com/demos/douban)
+
 
 
