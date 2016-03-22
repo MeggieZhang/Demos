@@ -40,5 +40,5 @@
 
 [retrofit+rxjava最佳实践](https://github.com/70kg/Demos/tree/master/app/src/main/java/com/demos/douban)
 
-
+[简易的图片加载框架，简单的UIL](https://github.com/70kg/Demos/tree/master/app/src/main/java/com/demos/imageLoader)   [参考](http://blog.csdn.net/column/details/android-imageloader.html)
 
