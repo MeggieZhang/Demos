@@ -11,6 +11,7 @@ import com.demos.asynchronous.AsyncTaskActivity;
 import com.demos.dragger.DraggerActivity;
 import com.demos.faceabstrct.FaceAbsActivity;
 import com.demos.headlist.RefreshListActivity;
+import com.demos.imageLoader.ImageLoaderActivity;
 import com.demos.service.ServiceActivity;
 import com.demos.uploadPic.UpLoadPicActivity;
 import com.demos.viewdraghelper.SwipBackActivity;
@@ -39,7 +40,8 @@ public enum AllActivitys {
     DraggerActivity(DraggerActivity.class),
     FaceAbsActivity(FaceAbsActivity.class),
     ServiceActivity(ServiceActivity.class),
-    DouBanMovieActivity(com.demos.douban.DouBanMovieActivity.class);
+    DouBanMovieActivity(com.demos.douban.DouBanMovieActivity.class),
+    ImageLoaderActivity(ImageLoaderActivity.class);
 
 
     private Class activityClazz;

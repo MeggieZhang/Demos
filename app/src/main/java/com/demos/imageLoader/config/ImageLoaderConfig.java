@@ -28,6 +28,15 @@ public class ImageLoaderConfig {
         this.displayConfig = displayConfig;
         return this;
     }
+    public ImageLoaderConfig setLoadingPlaceholder(int resId) {
+        displayConfig.loadingResId = resId;
+        return this;
+    }
+
+    public ImageLoaderConfig setNotFoundPlaceholder(int resId) {
+        displayConfig.failedResId = resId;
+        return this;
+    }
 
     public ImageLoaderConfig setThreadCount(int threadCount) {
         this.threadCount = Math.max(1, threadCount);

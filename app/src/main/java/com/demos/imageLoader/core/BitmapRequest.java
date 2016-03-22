@@ -5,28 +5,48 @@ import android.widget.ImageView;
 import com.demos.imageLoader.ImageLoaderFor70kg;
 import com.demos.imageLoader.config.DisplayConfig;
 import com.demos.imageLoader.policy.LoadPolicy;
+import com.demos.imageLoader.utils.ImageViewHelper;
 import com.demos.imageLoader.utils.Md5Helper;
 
 import java.lang.ref.Reference;
 import java.lang.ref.WeakReference;
-import java.util.Comparator;
 
 /**
  * Created by Mr_Wrong on 16/3/21.
  */
-public class BitmapRequest implements Comparator<BitmapRequest> {
-    //请求序列号 用于加载策略
-    public int serialNum = 0;
+public class BitmapRequest implements Comparable<BitmapRequest> {
+    Reference<ImageView> mImageViewRef;
+    public DisplayConfig displayConfig;
+    public ImageLoaderFor70kg.ImageListener imageListener;
     public String imageUri = "";
     public String imageUriMd5 = "";
-    Reference<ImageView> mImageViewRef;
-    public ImageLoaderFor70kg.ImageListener imageListener;
+    /**
+     * 请求序列号
+     */
+    public int serialNum = 0;
+    /**
+     * 是否取消该请求
+     */
     public boolean isCancel = false;
 
-    public LoadPolicy mLoadPolicy = ImageLoaderFor70kg.newInstance().getLoaderConfig().loadPolicy;
-    public DisplayConfig displayConfig;
+    /**
+     *
+     */
+    public boolean justCacheInMem = false;
 
-    public BitmapRequest(ImageView imageView, String uri, DisplayConfig config, ImageLoaderFor70kg.ImageListener listener) {
+    /**
+     * 加载策略
+     */
+    LoadPolicy mLoadPolicy = ImageLoaderFor70kg.newInstance().getLoaderConfig().loadPolicy;
+
+    /**
+     * @param imageView
+     * @param uri
+     * @param config
+     * @param listener
+     */
+    public BitmapRequest(ImageView imageView, String uri, DisplayConfig config,
+                         ImageLoaderFor70kg.ImageListener listener) {
         mImageViewRef = new WeakReference<ImageView>(imageView);
         displayConfig = config;
         imageListener = listener;
@@ -35,13 +55,43 @@ public class BitmapRequest implements Comparator<BitmapRequest> {
         imageUriMd5 = Md5Helper.toMD5(imageUri);
     }
 
-    @Override
-    public int compare(BitmapRequest lhs, BitmapRequest rhs) {
-        return mLoadPolicy.compare(this, rhs);
+    /**
+     * @param policy
+     */
+    public void setLoadPolicy(LoadPolicy policy) {
+        if (policy != null) {
+            mLoadPolicy = policy;
+        }
+    }
+
+    /**
+     * 判断imageview的tag与uri是否相等
+     *
+     * @return
+     */
+    public boolean isImageViewTagValid() {
+        return mImageViewRef.get() != null ? mImageViewRef.get().getTag().equals(imageUri) : false;
+    }
+
+    public ImageView getImageView() {
+        return mImageViewRef.get();
+    }
+
+    public int getImageViewWidth() {
+        return ImageViewHelper.getImageViewWidth(mImageViewRef.get());
+    }
+
+    public int getImageViewHeight() {
+        return ImageViewHelper.getImageViewHeight(mImageViewRef.get());
     }
 
     @Override
-    public int hashCode() {//用于hash的时候
+    public int compareTo(BitmapRequest another) {
+        return mLoadPolicy.compare(this, another);
+    }
+
+    @Override
+    public int hashCode() {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((imageUri == null) ? 0 : imageUri.hashCode());
@@ -73,4 +123,5 @@ public class BitmapRequest implements Comparator<BitmapRequest> {
             return false;
         return true;
     }
+
 }

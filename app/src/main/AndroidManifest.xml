@@ -5,6 +5,7 @@
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
     <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -47,6 +48,7 @@
         <activity android:name=".faceabstrct.FaceAbsActivity"/>
         <activity android:name=".service.ServiceActivity"/>
         <activity android:name=".douban.DouBanMovieActivity"/>
+        <activity android:name=".imageLoader.ImageLoaderActivity"/>
 
         <service android:name=".window.WindowService"/>
         <service android:name=".service.TestService"/>

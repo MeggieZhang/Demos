@@ -21,7 +21,6 @@ public class ImageLoaderFor70kg {
     private volatile BitmapCache mCache = new MemoryCache();
 
     private ImageLoaderFor70kg() {
-        checkConfig();
     }
 
     public static ImageLoaderFor70kg newInstance() {

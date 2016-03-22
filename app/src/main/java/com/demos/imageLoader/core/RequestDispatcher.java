@@ -19,13 +19,11 @@ public class RequestDispatcher extends Thread {
     @Override
     public void run() {
         while (!this.isInterrupted()) {
-
             try {
                 final BitmapRequest request = mRequestQueue.take();
                 if (request.isCancel) {
                     continue;
                 }
-
                 final String schema = parseSchema(request.imageUri);
                 //把uri的类型信息传进去  然后选择对应的loader进行加载
                 Loader imageLoader = LoaderManager.getInstance().getLoader(schema);
