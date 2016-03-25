@@ -41,7 +41,8 @@ public enum AllActivitys {
     FaceAbsActivity(FaceAbsActivity.class),
     ServiceActivity(ServiceActivity.class),
     DouBanMovieActivity(com.demos.douban.DouBanMovieActivity.class),
-    ImageLoaderActivity(ImageLoaderActivity.class);
+    ImageLoaderActivity(ImageLoaderActivity.class),
+    FluxActivity(com.demos.flux.FluxActivity.class);
 
 
     private Class activityClazz;

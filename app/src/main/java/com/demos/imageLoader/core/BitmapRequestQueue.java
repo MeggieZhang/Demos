@@ -1,5 +1,7 @@
 package com.demos.imageLoader.core;
 
+import com.demos.imageLoader.mytest.LoadEngine;
+
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.PriorityBlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -27,19 +29,25 @@ public class BitmapRequestQueue {
         mDispatcherNums = threadCount;
     }
 
+
+
+    LoadEngine mLoadEngine;
+
     private final void startDispatchers() {
-        mDispatchers = new RequestDispatcher[mDispatcherNums];
-        for (int i = 0; i < mDispatcherNums; i++) {
-            mDispatchers[i] = new RequestDispatcher(mRequestQueue);
-            mDispatchers[i].start();
-        }
+//        mDispatchers = new RequestDispatcher[mDispatcherNums];
+//        for (int i = 0; i < mDispatcherNums; i++) {
+//            mDispatchers[i] = new RequestDispatcher(mRequestQueue);
+//            mDispatchers[i].start();
+//        }
+        mLoadEngine = new LoadEngine();
     }
 
     public void addRequest(BitmapRequest request) {
-        if (!mRequestQueue.contains(request)) {
-            request.serialNum = this.generateSerialNumber();
-            mRequestQueue.add(request);
-        }
+//        if (!mRequestQueue.contains(request)) {
+//            request.serialNum = this.generateSerialNumber();
+//            mRequestQueue.add(request);
+//        }
+        mLoadEngine.submit(request);
     }
 
     /**

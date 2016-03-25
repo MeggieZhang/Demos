@@ -4,6 +4,8 @@ import android.widget.ImageView;
 
 import com.demos.imageLoader.ImageLoaderFor70kg;
 import com.demos.imageLoader.config.DisplayConfig;
+import com.demos.imageLoader.loader.Loader;
+import com.demos.imageLoader.loader.LoaderManager;
 import com.demos.imageLoader.policy.LoadPolicy;
 import com.demos.imageLoader.utils.ImageViewHelper;
 import com.demos.imageLoader.utils.Md5Helper;
@@ -14,7 +16,7 @@ import java.lang.ref.WeakReference;
 /**
  * Created by Mr_Wrong on 16/3/21.
  */
-public class BitmapRequest implements Comparable<BitmapRequest> {
+public class BitmapRequest implements Comparable<BitmapRequest>,Runnable {
     Reference<ImageView> mImageViewRef;
     public DisplayConfig displayConfig;
     public ImageLoaderFor70kg.ImageListener imageListener;
@@ -28,23 +30,10 @@ public class BitmapRequest implements Comparable<BitmapRequest> {
      * 是否取消该请求
      */
     public boolean isCancel = false;
-
-    /**
-     *
-     */
     public boolean justCacheInMem = false;
 
-    /**
-     * 加载策略
-     */
     LoadPolicy mLoadPolicy = ImageLoaderFor70kg.newInstance().getLoaderConfig().loadPolicy;
 
-    /**
-     * @param imageView
-     * @param uri
-     * @param config
-     * @param listener
-     */
     public BitmapRequest(ImageView imageView, String uri, DisplayConfig config,
                          ImageLoaderFor70kg.ImageListener listener) {
         mImageViewRef = new WeakReference<ImageView>(imageView);
@@ -55,9 +44,6 @@ public class BitmapRequest implements Comparable<BitmapRequest> {
         imageUriMd5 = Md5Helper.toMD5(imageUri);
     }
 
-    /**
-     * @param policy
-     */
     public void setLoadPolicy(LoadPolicy policy) {
         if (policy != null) {
             mLoadPolicy = policy;
@@ -124,4 +110,16 @@ public class BitmapRequest implements Comparable<BitmapRequest> {
         return true;
     }
 
+    @Override
+    public void run() {
+        final String schema = parseSchema(this.imageUri);
+        Loader imageLoader = LoaderManager.getInstance().getLoader(schema);
+        imageLoader.loadImage(this);
+    }
+    private String parseSchema(String uri) {
+        if (uri.contains("://")) {
+            return uri.split("://")[0];
+        }
+        return "";
+    }
 }

@@ -4,11 +4,8 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <include layout="@layout/inc_toolbar"/>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycleview"
+    <TextView
+        android:id="@+id/tv_flux_name"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
+        android:layout_height="wrap_content"/>
 </LinearLayout>

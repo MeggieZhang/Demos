@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -49,6 +50,7 @@
         <activity android:name=".service.ServiceActivity"/>
         <activity android:name=".douban.DouBanMovieActivity"/>
         <activity android:name=".imageLoader.ImageLoaderActivity"/>
+        <activity android:name=".flux.FluxActivity"/>
 
         <service android:name=".window.WindowService"/>
         <service android:name=".service.TestService"/>

@@ -19,7 +19,6 @@ import java.net.URL;
 public class UrlLoader extends AbsLoader {
     @Override
     public Bitmap onLoadImage(BitmapRequest request) {
-        KLog.e("加载网络图片");
         final String imageUrl = request.imageUri;
         FileOutputStream fos = null;
         InputStream is = null;
